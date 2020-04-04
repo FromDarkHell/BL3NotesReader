@@ -61,7 +61,7 @@ class newsManager:
 		newsItems = json.loads(stringItems)
 		for newsItem in newsItems:
 			lowerTitle = newsItem['title'].lower()
-			if "hotfixes" in lowerTitle or "patch" in lowerTitle or "hot-fixes" in lowerTitle:
+			if ("hotfixes" in lowerTitle or "patch" in lowerTitle or "hot-fixes" in lowerTitle) and "borderlands 3" in lowerTitle:
 				# The URLs gathered from this end with /, strip them out so we can read more info from 'em
 				newRequestUrl = 'https://borderlands.com' + newsItem['url'][:-1].replace("en-us","en-US")
 				self.newsPosts += [newsPost(newRequestUrl)]
@@ -78,7 +78,7 @@ class newsManager:
 			for a in htmlTree.cssselect('a'):
 				if a.get('href') == None: continue
 				lowerHref = a.get('href').lower().replace("en-us","en-US")
-				if "hotfixes" in lowerHref or "patch" in lowerHref or "hot-fixes" in lowerHref:
+				if ("hotfixes" in lowerHref or "patch" in lowerHref or "hot-fixes" in lowerHref) and "borderlands-3" in lowerHref:
 					newRequestUrl = 'https://borderlands.com' + lowerHref[:-1] 
 					self.newsPosts += [newsPost(newRequestUrl)]
 				if "news-archive" in lowerHref:
@@ -97,9 +97,8 @@ class newsManager:
 		print("Writing news to disk...")
 		for newsPost in self.newsPosts:
 			print("Writing post \"" + newsPost.postName + "\"")
-			with open("output\\" + newsPost.postName + ".md", 'w') as fileToWrite:
+			with open("..\\output\\" + newsPost.postName + ".md", 'w') as fileToWrite:
 				fileToWrite.write(newsPost.postInformation)			
 
 
 manager = newsManager()
-#n = newsPost('https://borderlands.com/en-US/news/2020-04-02-borderlands-3-hotfixes-apr-2/')
