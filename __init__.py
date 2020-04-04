@@ -4,6 +4,7 @@ import urllib.parse
 import html2text
 import requests
 import json
+import re
 
 class newsPost:
 
@@ -17,10 +18,13 @@ class newsPost:
 	def readDataFromPost(self):
 		htmlTree = html.fromstring(requests.get(url=self.url).text)
 		bodyText = htmlTree.cssselect('div.wysiwyg-content:nth-child(3)')[0]
-		bodyOutput = urllib.parse.unquote(self.stringifyChildren(bodyText))
+		# Unquote our html output for ease, fix up redirect urls
+		bodyOutput = urllib.parse.unquote(self.stringifyChildren(bodyText)).replace("locale-redirect.html?url=","en-US")
 
 		if self.bMarkdown:
 			bodyOutput = html2text.html2text(bodyOutput)
+			for match in re.findall(r"]\(.+?\)", bodyOutput, re.DOTALL):
+				bodyOutput = bodyOutput.replace(match, match.replace('\n',''))
 
 		self.postInformation = bodyOutput
 
@@ -32,7 +36,7 @@ class newsPost:
 
 class newsManager:
 
-	def __init__(self, bArchived=False, bOutput=True):
+	def __init__(self, bArchived=True, bOutput=True):
 		self.baseNewsPath = 'https://borderlands.com/en-US/news'
 		self.baseNewsArchive = 'https://borderlands.com/en-US/news-archive/'
 		self.newsPosts = []

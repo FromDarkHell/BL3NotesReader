@@ -1,0 +1,52 @@
+This week's [Borderlands 3](https://borderlands.com/en-US/shop/borderlands-3-super-deluxe-edition) hotfixes, which will be live on
+all platforms by or before 3:00 PM PDT today, include quality-of-life
+adjustments to [Bloody Harvest](https://borderlands.com/en-US/news/2019-10-21-bloody-harvest-trailer-info/) and address various issues
+reported by the community. We appreciate all the help. Please keep sending in
+your bugs and feedback to [support.2k.com](https://support.2k.com/)!
+
+# Bloody Harvest Adjustments
+
+ _Captain Haunt is a fun boss fight with multiple phases, but players were
+often skipping entire phases because Captain Haunt's shields were so low. We
+increased his shields to make the fight slightly more engaging for most
+players and dramatically increased the loot drop chance, so players are
+compensated nicely for defeating Captain Haunt._
+
+  * Increased Captain Haunt's chance to drop legendary gear
+  * Increased Captain Haunt's shields
+  * The Hecktoplasm drop rate from Ghosts has been increased  
+\- Ghosts drop 2 Hecktoplasm  
+\- Badass Ghosts drop 3 Hecktoplasm  
+\- Loot Ghosts drop 5 Hecktoplasm
+
+  * Loot Ghosts now drop more loot
+  * Loot Ghosts have an increased the chance of dropping Bloody Harvest specific legendary gear
+
+# Terror Anointments
+
+ _Following what we’ve seen and heard from the Community and the fading
+Halloween season, you’re going to start seeing less Terror anointed parts
+dropping from regular enemies. Bloody Harvest enemies (including Ghosts!) will
+be picking up the slack, so if you are hunting to make a spooky build you know
+where to look!_
+
+  * The chance for Terror anointed parts to drop from regular enemies has been decreased.
+  * The chance for Terror anointed parts to drop from Bloody Harvest enemies has been increased.
+
+# Bug fixes
+
+  * Anointed enemies are no longer immune to Cryo damage.
+
+ _Note: Although they can be slowed by Cryo damage, they cannot be frozen._
+
+  * Addressed a reported potential progression blocker for _"It's Alive"_ with the Abomination bot.
+  * Addressed a reported potential progression blocker if players quit the game at a certain point in _"The Guns of Reliance"_
+  * Addressed a reported issue that Explosive Gunpowder barrels where not showing effects when shot.
+  * Explosions created by enemy Badass' weapons have a much quicker explosion effect to reduce screen clutter
+
+ _We found that Badass enemies with heavy weapons were creating too many
+explosion effects that lingered on the screen, hindering the player's view at
+times. We are going to make a larger change to their weapons in the patch but
+wanted to shorten the explosion particle effect to dramatically lower screen
+clutter._
+

@@ -1,14 +1,11 @@
 Today we will release an update for [Borderlands
-3](https://borderlands.com/locale-redirect.html?url=/shop/borderlands-3-super-
-deluxe-edition), which will be live on all platforms (with the exception of
-Mac, which is scheduled for April 2) by 12:00 PM PST, that adds support for
-the new campaign add-on [Guns, Love, and Tentacles: The Marriage of Wainwright
-& Hammerlock](https://borderlands.com/locale-
-redirect.html?url=/gunslovetentacles/), [new ECHOcast Moxxtail
-Events](https://borderlands.com/locale-
-redirect.html?url=/news/2020-03-24-moxxtail-events-borderlands-3-echocast-
-extension/), unlocks a new Max Level and Guardian Ranks, and addresses some
-community concerns!
+3](https://borderlands.com/en-US/shop/borderlands-3-super-deluxe-edition),
+which will be live on all platforms (with the exception of Mac, which is
+scheduled for April 2) by 12:00 PM PST, that adds support for the new campaign
+add-on [Guns, Love, and Tentacles: The Marriage of Wainwright &
+Hammerlock](https://borderlands.com/en-US/gunslovetentacles/), [new ECHOcast
+Moxxtail Events](https://borderlands.com/en-US/news/2020-03-24-moxxtail-events-borderlands-3-echocast-extension/), unlocks a new Max Level and
+Guardian Ranks, and addresses some community concerns!
 
 If you are experiencing any issues or want to provide feedback, please submit
 a ticket to [support.2k.com](https://support.2k.com/). Below are the notes for
@@ -46,10 +43,8 @@ would be unlocked, and you can start right in the new content._
 Moxxtail Events, which let you convert Twitch Bits into in-game beverages that
 provide the streamer with various limited-time buffs. We have a full
 explanation of how they work in our_[ _Moxxtail Events
-guide_](https://borderlands.com/locale-
-redirect.html?url=/news/2020-03-24-moxxtail-events-borderlands-3-echocast-
-extension/) _, so be sure to check that out if you want to dabble in some
-Borderlands 3 mixology._
+guide_](https://borderlands.com/en-US/news/2020-03-24-moxxtail-events-borderlands-3-echocast-extension/) _, so be sure to check that out if you want
+to dabble in some Borderlands 3 mixology._
 
 ## Stability
 
@@ -58,7 +53,7 @@ Borderlands 3 mixology._
   * Fixed a crash that could sometimes occur when quickly navigating Crazy Earl’s shop
   * Fixed a crash that could sometimes occur during the objective to collect tokens in the “Kill KillaVolt” mission in Lectra City
   * Fixed a crash that could sometimes occur during the “Melee Mine Cart” objective of Angels and Speed Demons in Konrad’s Hold
-  * Fixed a crash that sometimes occurred when loading into Grand Opening in [Moxxi’s Heist of The Handsome Jackpot](https://borderlands.com/locale-redirect.html?url=/handsomejackpot/)
+  * Fixed a crash that sometimes occurred when loading into Grand Opening in [Moxxi’s Heist of The Handsome Jackpot](https://borderlands.com/en-US/handsomejackpot/)
   * Fixed a crash that could sometimes occur when transitioning from The Spendopticon to The Compactor in a four-player game in Moxxi’s Heist of The Handsome Jackpot
 
 ## Performance
