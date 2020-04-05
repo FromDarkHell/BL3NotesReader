@@ -13,6 +13,7 @@ class newsPost:
 		self.url = url
 		self.bMarkdown = bMarkdown
 		self.postInformation = ""
+		self.htmlInformation = ""
 		self.readDataFromPost()
 
 	def readDataFromPost(self):
@@ -20,6 +21,7 @@ class newsPost:
 		bodyText = htmlTree.cssselect('div.wysiwyg-content:nth-child(3)')[0]
 		# Unquote our html output for ease, fix up redirect urls
 		bodyOutput = urllib.parse.unquote(self.stringifyChildren(bodyText)).replace("locale-redirect.html?url=","en-US")
+		self.htmlInformation = bodyOutput.replace("\t","").replace("\n","").replace("\r","")
 
 		if self.bMarkdown:
 			bodyOutput = html2text.html2text(bodyOutput)
@@ -95,10 +97,18 @@ class newsManager:
 
 	def writeNewsToDrive(self):
 		print("Writing news to disk...")
+		markdownDictionary = {} # {"name":"content"}
+		htmlDictionary = {}
 		for newsPost in self.newsPosts:
 			print("Writing post \"" + newsPost.postName + "\"")
 			with open("..\\output\\" + newsPost.postName + ".md", 'w') as fileToWrite:
-				fileToWrite.write(newsPost.postInformation)			
+				fileToWrite.write(newsPost.postInformation)	
+			htmlDictionary.update({newsPost.postName : newsPost.htmlInformation})
+			markdownDictionary.update({newsPost.postName : newsPost.postInformation})
 
+		with open("..\\html\\json\\htmlInformation.json", 'w') as outFile:
+			json.dump(htmlDictionary, outFile)
+		with open("..\\html\\json\\markdownInformation.json", 'w') as outFile:
+			json.dump(markdownDictionary, outFile)
 
 manager = newsManager()

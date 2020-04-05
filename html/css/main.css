@@ -1,0 +1,106 @@
+/* Font(s) */
+
+@font-face {
+  font-family: 'countach';
+  src: url('fonts/countach_regular_italic.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  	url('fonts/countach_regular_italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+* {
+    box-sizing: border-box;
+}
+
+/* Backgrounds */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..\\backgrounds/ProvingGroundsTeam.jpg');
+    background-size: auto;
+    color: #eee;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Headers */
+
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255,234,2);
+    font: 32pt countach, sans-serif;
+    padding-right: 250px
+}
+
+h2 {
+    margin: 2.5px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255,234,2);
+    font: 27pt countach, sans-serif;
+}
+
+/* Links / a / href */
+
+input {
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  *overflow: hidden;
+}
+
+a {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  color: rgb(255,234,2);
+  text-decoration: underline;
+  font: 16pt sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Column Aligning */
+
+.column {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255,234,2,0.45);
+}
+
+.left {
+  width: 30%;
+  float: left;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.right {
+  width: 45%;
+  float: right;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Column Texts */
+.patchQuote {
+  text-indent: 30%;
+  padding-left: 50px;
+}
+
+.resultLink {
+  padding-left: 15px;
+}
+
+.resultBullet {
+  position: relative;
+  list-style-position: inside;
+  padding-left: 30px;
+}
+
+/* Checkboxes */
+
+/* Textbox Stylings */
