@@ -8,6 +8,17 @@ async function initializeJSONData() {
 	}).then((data) => {
 		htmlInformation = data
 	});
+
+	if (window.location.search != '' && URLSearchParams) {
+
+		var params = new URLSearchParams(window.location.search);
+
+		if (params.has('q')) document.getElementById("searchInput").value = params.get('q')
+		if (params.has('c')) document.getElementById('caseSensitive').checked = params.get('c')
+		if (params.has('n')) document.getElementById('showResults').checked = params.get('n')
+
+		changeSearch();
+	}
 }
 
 function searchThroughText(needle, haystack, caseSensitive) {
@@ -82,8 +93,10 @@ function changeSearch() {
 	if (needle == '')
 		return;
 
+
 	document.body.style.cursor = "wait";
-	results = searchThroughInformation(needle, htmlInformation, document.getElementById('caseSensitive').checked);
+	bCaseSensitive = document.getElementById('caseSensitive').checked;
+	results = searchThroughInformation(needle, htmlInformation, bCaseSensitive);
 
 	resultDiv = document.getElementById('resultsDiv')
 	originalDiv = document.getElementById('linksContainer')
@@ -134,6 +147,14 @@ function changeSearch() {
 
 	if (bShowTotalCount) {
 		document.getElementById('resultsHeader').innerText = (`Results (${results.length})`);
+	}
+
+	if (history.pushState) {
+		var base = window.location.protocol + "//" + window.location.host + window.location.pathname;
+		var newurl = base + ('?q=' + encodeURI(needle)) + (bCaseSensitive ? ("&c=" + encodeURI(bCaseSensitive)) : "") + (bShowNearbyText ? ("&n=" + encodeURI(bShowNearbyText)) : "");
+		window.history.pushState({
+			path: newurl
+		}, '', newurl);
 	}
 
 	document.body.style.cursor = "default";
