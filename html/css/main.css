@@ -13,8 +13,9 @@
 /* Backgrounds */
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..\\backgrounds/ProvingGroundsTeam.jpg');
-    background-size: auto;
+    margin:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..\\backgrounds/ProvingGroundsTeam.jpg') no-repeat 50% 50% fixed;
+    background-size: cover;
     color: #eee;
     cursor: default;
     font-family: 'Roboto', sans-serif;
@@ -104,3 +105,17 @@ a:visited {
 /* Checkboxes */
 
 /* Textbox Stylings */
+
+
+/* Footer */
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: left;
+  font-size: 12pt;
+}
+
+/* Tooltip(s) */

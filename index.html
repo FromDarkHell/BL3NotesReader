@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<link rel="icon" href="/html/favicon.ico" type="image/x-icon" />
 	<meta charset="utf-8">
 	<title>Borderlands 3 Patch Notes</title>
 	<link href='html\css\main.css' rel='stylesheet' type='text/css'>
@@ -17,11 +18,11 @@
 			<h2> Settings </h1>
 
 			<label for="searchBox">Text to Search For:</label>
-			<input name="searchBox" id="searchInput" type="text" placeholder="Search" style="float: right;" onchange="changeSearch()" autocomplete="off" />
+			<input name="searchBox" id="searchInput" type="text" placeholder="Search" style="float: right;" onchange="changeSearch()" autocomplete="off" title="The text to search the patch notes for"/>
 			<br>
-			<input type="checkbox" id="caseSensitive" class="checkmark" name="caseSensitive" style="float: right;padding-left: 15px" autocomplete="off" onchange="changeSearch()">Case Sensitive?</input>
+			<input type="checkbox" id="caseSensitive" class="checkmark" name="caseSensitive" style="float: right;padding-left: 45px" autocomplete="off" onchange="changeSearch()" title="Whether or not the search operation is case sensitive">Case Sensitive?</input>
 			<br>
-			<input type="checkbox" id="showResults" class="checkmark" name="showResults" style="float: right;padding-left: 15px" autocomplete="off" onchange="changeSearch()" checked>Show Nearby Text?</input>
+			<input type="checkbox" id="showResults" class="checkmark" name="showResults" style="float: right;padding-left: 45px" autocomplete="off" onchange="changeSearch()" title="Whether or not to show surrounding text.&#10;This text can be very inaccurate.&#10;Use at own risk.">Show Nearby Text?</input>
 			<div class="resultLinks">
 				<h2> Original Links </h1>
 
@@ -36,7 +37,7 @@
 		</div>
 
 		<div class="column right">
-			<h2>Results</h1>
+			<h2 id="resultsHeader">Results</h1>
 
 			<div id="resultsDiv">
 
@@ -66,6 +67,14 @@
 
 	</div> 
 
+	<footer id="footer">
+	  <p>
+	  	Created By: <a href="https://github.com/FromDarkHell">FromDarkHell</a>
+	  	Hosted On: <a href="https://github.com/FromDarkHell/BL3NotesReader">Github</a>
+	  </p>
+	</footer>
+
 </body>
+
 
 </html>

@@ -1,15 +1,8 @@
-markdownInformation = {}
 htmlInformation = {}
 
 window.onload = initializeJSONData()
 
 async function initializeJSONData() {
-
-	await fetch("html/json/markdownInformation.json").then((response) => {
-		return response.json();
-	}).then((data) => {
-		markdownInformation = data
-	});
 
 	await fetch("html/json/htmlInformation.json").then((response) => {
 		return response.json();
@@ -18,14 +11,13 @@ async function initializeJSONData() {
 	});
 }
 
-// TODO: Fix these bits of searching...
 function searchThroughText(needle, haystack, caseSensitive) {
+	haystackProper = haystack;
 	if (!caseSensitive) {
 		haystack = haystack.toLowerCase();
 		needle = needle.toLowerCase();
 	}
 	if (haystack.search(needle) == -1) {
-		//console.log(`Unable to find '${needle}`);
 		return
 	}
 	var indexes = []
@@ -39,32 +31,40 @@ function searchThroughText(needle, haystack, caseSensitive) {
 	textOutput = []
 
 	indexes.forEach((el) => {
-		startIndex = el - 82;
-		endIndex = el;
-		/*var c = ''
-		while (startIndex-- && (c != '\n' && c != '*' && c != '\t' && c != '.')) {
-			c = haystack.charAt(startIndex)
+		startIndex = el;
+		endIndex = (el + needle.length);
+		lowerCaseStack = haystack.toLowerCase();
+
+		c = lowerCaseStack.substring(startIndex, el);
+
+		while (startIndex > (el - 150) && c.indexOf("\n") == -1 && c.indexOf(">") == -1 && c.indexOf(" *") == -1 && c.indexOf(".") == -1 && c.indexOf(',') == -1 && c.indexOf("!") == -1) {
+			c = lowerCaseStack.substring(startIndex, el);
+			startIndex -= 1;
 		}
-		c = ''
-		while ((c != '*' && c != '#' && c != '.' && c != '\n')) {
-			c = haystack.charAt(endIndex)
-			endIndex += 1
+		startIndex += 2;
+
+		c = lowerCaseStack.substring(el, endIndex);
+
+		while (endIndex < (el + 150) && c.indexOf("\n") == -1 && c.indexOf("<") == -1 && c.indexOf(" *") == -1 && c.indexOf(".") == -1 && c.indexOf(', and') == -1 && c.indexOf("!") == -1) {
+			c = lowerCaseStack.substring(el, endIndex);
+			endIndex += 1;
 		}
-		*/
-		endIndex = endIndex + needle.length;
-		textOutput.push(haystack.substring(startIndex, endIndex))
+		endIndex -= 2;
+
+		textValue = haystackProper.substring(startIndex, endIndex);
+		if (textValue.indexOf(":") == -1) {
+			textOutput.push(textValue);
+		}
 	});
 
 	return textOutput
 }
 
 function searchThroughInformation(needle, info, caseSensitive) {
-	console.log(`Searching for ${needle}`)
 	neededPosts = []
 	for (const [key, value] of Object.entries(info)) {
 		output = searchThroughText(needle, value, caseSensitive)
 		if (typeof output != "undefined" && output != null && output.length != null && output.length > 0) {
-			console.log(`${needle} found in ${key}`)
 			neededPosts.push({
 				key: key,
 				value: output
@@ -81,6 +81,7 @@ function changeSearch() {
 	if (needle == '')
 		return;
 
+	document.body.style.cursor = "wait";
 	results = searchThroughInformation(needle, htmlInformation, document.getElementById('caseSensitive').checked);
 
 	resultDiv = document.getElementById('resultsDiv')
@@ -90,6 +91,7 @@ function changeSearch() {
 	originalDiv.textContent = ''
 
 	bShowNearbyText = document.getElementById('showResults').checked
+	bShowTotalCount = true;
 
 	results.forEach((el) => {
 		githubLink = "https://github.com/FromDarkHell/BL3NotesReader/blob/master/output/" + el["key"] + ".md"
@@ -103,7 +105,21 @@ function changeSearch() {
 		resultsDiv.appendChild(document.createElement("br"))
 
 		if (bShowNearbyText) {
-			console.log("Displaying nearby text...")
+
+			el["value"].forEach((el => {
+
+				listElement = document.createElement('li');
+				listElement.classList.add('resultBullet');
+
+				quoteContent = document.createElement('b');
+				quoteContent.classList.add('patchQuote');
+				quoteContent.innerText = el;
+
+				listElement.appendChild(quoteContent);
+				resultsDiv.appendChild(listElement);
+			}));
+
+			resultsDiv.appendChild(document.createElement('br'))
 		}
 
 		// Add in the original links to all of our news.
@@ -115,6 +131,11 @@ function changeSearch() {
 		originalDiv.appendChild(document.createElement("br"));
 	})
 
+	if (bShowTotalCount) {
+		document.getElementById('resultsHeader').innerText = (`Results (${results.length})`);
+	}
+
+	document.body.style.cursor = "default";
 }
 
 function createNewRedirect(href) {
@@ -127,9 +148,6 @@ function createNewRedirect(href) {
 }
 
 function getNewsText(keyName) {
-	// 2020-03-26-borderlands-3-patch-hotfixes-mar-26/
-	// 2020-04-02-borderlands-3-hotfixes-apr-2/
-
 	date = getDateFromKey(keyName, false);
 
 	title = keyName.substring(11, keyName.substring(0, keyName.lastIndexOf('-')).lastIndexOf('-'));
@@ -137,8 +155,6 @@ function getNewsText(keyName) {
 
 	return title;
 }
-
-
 
 function getDateFromKey(keyDate, excludeYear) {
 	lastDash = keyDate.lastIndexOf('-')
