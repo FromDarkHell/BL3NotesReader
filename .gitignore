@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 *.sublime-workspace
 *.sublime-project
+build.bat
