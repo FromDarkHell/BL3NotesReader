@@ -58,8 +58,8 @@ class newsManager:
 		htmlTree = html.fromstring(requests.get(url=self.baseNewsPath).text)
 
 		# This is a stupidly convoluted way of sanitizing our JSON 	
-		stringItems = ((str(htmlTree.cssselect('.-mt-md')[0].get('ng-init')))[12:-2] + "]").replace('url:','"url":').replace('title:','"title":').replace('category:','"category":').replace('thumb:','"thumb":').replace("'","\"").replace(',\n		}','\n		}')
-		
+		stringItems = ((str(htmlTree.cssselect('.-mt-md')[0].get('ng-init')))[12:-2] + "]").replace('url:','"url":').replace('title:','"title":').replace('category:','"category":').replace('thumb:','"thumb":').replace(" '"," \"").replace(',\n		}','\n		}').replace("',\n","\",\n")
+
 		newsItems = json.loads(stringItems)
 		for newsItem in newsItems:
 			lowerTitle = newsItem['title'].lower()
