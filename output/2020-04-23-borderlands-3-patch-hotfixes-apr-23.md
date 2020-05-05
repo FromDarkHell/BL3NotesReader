@@ -1,8 +1,10 @@
-Today we will release an update for Borderlands 3, which will be live on all
-platforms by 12:00 PM PST, that kicks off the [Revenge of the
-Cartels](https://borderlands.com/en-US/news/2020-04-21-borderlands-3-revenge-of-the-cartels/) Seasonal Event, adds a new update to [Mayhem
-Mode](https://borderlands.com/en-US/news/2020-04-21-borderlands-3-mayhem-mode/), brings us the first week of [Loot the
-Universe](https://borderlands.com/en-US/news/2020-04-22-borderlands-3-loot-the-universe/), and addresses some community concerns!
+Today we will release an update for [Borderlands
+3](https://borderlands.com/en-US/shop/borderlands-3-super-deluxe-edition),
+which will be live on all platforms by 12:00 PM PST, that kicks off the
+[Revenge of the Cartels](https://borderlands.com/en-US/news/2020-04-21-borderlands-3-revenge-of-the-cartels/) Seasonal Event, adds
+a new update to [Mayhem Mode](https://borderlands.com/en-US/news/2020-04-21-borderlands-3-mayhem-mode/), brings us the first week of
+[Loot the Universe](https://borderlands.com/en-US/news/2020-04-22-borderlands-3-loot-the-universe/), and addresses some
+community concerns!
 
 If you are experiencing any issues or want to provide feedback, please submit
 a ticket to [support.2k.com](https://support.2k.com/). Below are the notes for
@@ -27,7 +29,7 @@ underlings to save Maurice’s hide._
   * Addressed a reported crash that could sometimes occur after exiting the Ammo Dump vendor menu
   * Addressed a reported crash that could sometimes occur after saving and reloading after completing the “Shoot pipe” objective for The Nibblenomicon in Dustbound Archives
   * Addressed a reported runtime crash
-  * Addressed a reported crash that could sometimes occur when punching enemies with the Static Touch artifact equipped
+  * Addressed a reported crash that could sometimes occur when punching enemies with the Static Charge artifact equipped
   * Addressed a reported crash that could sometimes occur when loading into a cross platform game session via an invite
   * Addressed a reported concern that players would occasionally encounter a hitch when completing a Crew Challenge
 
@@ -45,7 +47,7 @@ underlings to save Maurice’s hide._
   * Addressed a reported concern that explosive barrels would not consistently appear for players if the barrel was not in view of the host
   * Addressed a reported concern that Ratch would disappear for the client when killing them with gore censored
   * Addressed a reported concern that players would consistently hitch when any interactive object with a sub menu is hit with Atlas tracking darts
-  * Addressed a reported concern that players were bring charged more than the listed price when refilling ammo at an Ammo Dump vending machine
+  * Addressed a reported concern that players were being charged more than the listed price when refilling ammo at an Ammo Dump vending machine
   * Addressed a reported concern that Mayhem level was not displaying correctly for clients
   * Addressed a reported concern that the host player could appear invisible for clients if the host respawned an Outrunner and quickly exited it
   * Addressed a reported concern that players would occasionally experience stuttering while driving in a vehicle
@@ -127,7 +129,7 @@ SDUs, and the others, on Sanctuary III._
 
 # Audio
 
-  * Addressed a reported issue where subtitles for Eridium Writing would not be synced with the audio
+  * Addressed a reported issue where subtitles for Eridian Writing would not be synced with the audio
   * Addressed a reported issue where subtitles could fall out of sync with VO if the ECHO log is closed a few seconds after replaying an ECHO log
   * Implemented a method of manually timing subtitles
   * Addressed a reported issue where audio from the Tyreen, Troy and Lilith cinematic in The Droughts can be heard again if the client disconnects and rejoins
@@ -180,10 +182,10 @@ crit
   * Addressed a reported concern that the Siren’s Helping Hands passive skill did not reset the duration if it will still active when the Action Skill came off cool down
   * Addressed a reported concern that the Siren’s Remnant passive skill did not function after killing an anointed enemy
   * Addressed a reported concern that the elemental projectiles from the Siren’s Deliverance skill would not always seek out enemies
-  * Addressed a reported concern that the Siren’s Glamour Glamour skill would cause confused enemies to become immune and change allegiance
+  * Addressed a reported concern that the Siren’s Glamour skill would cause confused enemies to become immune and change allegiance
   * Addressed a reported concern that the Beastmaster’s Lick the Wounds passive skill did not apply it’s 30% damage boost after reviving
   * Addressed a reported concern that the Beastmaster’s chance to fire an extra projectile per shot from Two F4ng can be stacked if the player respec’s after triggering the skill
-  * Addressed a reported concern that pet healing from Beastmaster’s Who Saved Who skill could last for longer than intended after damage is done to the player
+  * Addressed a reported concern that pet healing from Beastmaster’s Who Rescued Who skill could last for longer than intended after damage is done to the player
   * Addressed a reported concern that the Beastmaster’s Who Rescued Who skill did not allow players to heal their pet by dealing damage
   * Addressed a reported concern that the Beastmaster’s Ambush Predator skill did not have an icon on the HUD indicating when it was active
   * Addressed a reported concern that the Beastmast’s action skill cooldown reductions from Head Count during Fade Away were lost on action skill end
