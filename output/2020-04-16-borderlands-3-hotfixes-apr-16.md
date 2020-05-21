@@ -12,11 +12,11 @@ The Co-Op Loot Drop event is continuing until April 30!
 
 This week, we have two new mini-events: **Mr. Torgue’s Slaughter Onslaught**
 and **Making It Rain**! **Mr. Torgue’s Slaughter Onslaught** will increase the
-number of dedicated loot drops from Slaughter bosses. The **Making It Rain**
-event will increase the in-game currency Cash drops for normal, Badass, and
-Anointed enemies, which will come in handy when you’re fighting the Cartels in
-this month’s upcoming patch. These events will go live with the hotfix today
-and will end on April 23 at 9:00 AM PT.
+number of dedicated loot drops from Circles of Slaughter bosses. The **Making
+It Rain** event will increase the in-game currency Cash drops for normal,
+Badass, and Anointed enemies, which will come in handy when you’re fighting
+the Cartels in this month’s upcoming patch. These events will go live with the
+hotfix today and will end on April 23 at 9:00 AM PT.
 
 There are no balance adjustments this week. We wanted to take this time to let
 the dust settle after the balance adjustments that were made over the previous
