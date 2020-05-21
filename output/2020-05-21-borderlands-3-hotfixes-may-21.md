@@ -12,5 +12,5 @@ PT! There will not be another mini-event in-game in preparation for the June 4
 patch.**
 
   * Changed Rare Spawns in the Guns, Love, and Tentacles campaign add-on to always spawn
-  * Addressed a reported concern that world drops for Wotan were not dropping in Mayhem 4
+  * Addressed a reported concern that certain dedicated weapon drops for Wotan were not dropping
 
