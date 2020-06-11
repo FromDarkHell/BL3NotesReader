@@ -2,8 +2,8 @@ Today we will release an update for [Borderlands
 3](https://borderlands.com/en-US/shop/borderlands-3-super-deluxe-edition),
 which will be live on all platforms by 12:00 PM PST (with the exception of
 Mac, which is planned to go live on June 18). This update adds the new
-takedown: Takedown at the Guardian Breach, addresses the first phase of
-changes to Mayhem 2.0, and addresses some player-reported concerns.
+takedown: [Takedown at the Guardian Breach](https://borderlands.com/en-US/news/2020-06-11-takedown-at-the-guardian-breach/), addresses the first
+phase of changes to Mayhem 2.0, and addresses some player-reported concerns.
 
  **The seasonal event**[ **Revenge of the
 Cartels**](https://borderlands.com/en-US/news/2020-04-21-borderlands-3-revenge-of-the-cartels/) **officially ends
@@ -124,8 +124,9 @@ Update_](https://borderlands.com/en-US/news/2020-05-13-dev-update-mayhem-mode/) 
 
  _The four changes above were made to keep Mayhem 2.0 running smoothly, and we
 will continue to monitor the performance of Mayhem 2.0 and make adjustments in
-the future. The Buddy System and Drone Ranger Mayhem Modifiers are continuing
-to go through testing and are not going to be turned back on at this time._
+the future. The Boundary Issues and Drone Ranger Mayhem Modifiers are
+continuing to go through testing and are not going to be turned back on at
+this time._
 
   * Addressed a reported concern that players would sometimes not load in correctly after throwing grenades and making changes to Mayhem mode
   * Addressed a reported concern that the travel countdown timer would sometimes not display the map name when applying Mayhem modifier changes after the player activated a New-U Station that was not a Fast Travel Station
