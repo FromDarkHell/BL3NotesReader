@@ -96,6 +96,8 @@ feedback, please submit a ticket to [support.2k.com](https://support.2k.com/).
 # General
 
   * Melee and Action Skill damage further increased
+  * Addressed a reported concern that Dakka Bear was negating Action Skill Scaling
+  * Addressed a reported concern that Zane, the Operative was not receiving it’s intended action skill bonus
 
 # Weapon Adjustments
 
