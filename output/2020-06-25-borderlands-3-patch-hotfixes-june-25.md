@@ -1,7 +1,8 @@
 Today we will release an update for [Borderlands
 3](https://borderlands.com/en-US/shop/borderlands-3-super-deluxe-edition),
-which will be live on all platforms by 12:00 PM PST. This patch adds support
-for the new campaign add-on: [Bounty of Blood](https://borderlands.com/en-US/bountyofblood/)! It also includes Phase II of the Mayhem Mode updates,
+which will be live on all platforms by 12:00 PM PST (with the exception of
+Mac, which is planned to go live on July 2). This patch adds support for the
+new campaign add-on: [Bounty of Blood](https://borderlands.com/en-US/bountyofblood/)! It also includes Phase II of the Mayhem Mode updates,
 which introduces damage scaling in Mayhem and support for Mayhem gear in all
 loot sources!
 
