@@ -27,7 +27,7 @@ purchased using Eridium!
 # Legendary Gear available in Vending Machines
 
 We have rebalanced vending machines based on community feedback. Vending
-machines of all type have a small chance of providing Legendary gear for
+machines of all types have a small chance of providing Legendary gear for
 purchase. We’ve also removed Uncommon (green) Rarity gear from the Item of the
 Day pool.
 
@@ -157,7 +157,7 @@ made a solution that better fits our intended balance goals._
   * Addressed a reported concern where the Vibration effect from FL4K’s “Burst Aid” augment persists after the action skill ends
   * FL4K’s pets now use the correct color when using the Spec’d Out skin for clients
   * Addressed a reported concern where FL4K’s normal Jabber pet attack command was not functioning correctly
-  * Updated the Gunner’s Selfless Vengence skill to scale the duration with each rank invested
+  * Updated the Gunner’s Selfless Vengeance skill to scale the duration with each rank invested
   * Removed the ability for the Gunner to skip the boss’ teleport action in Takedown at the Guardian Breach by entering or exiting Iron Bear as the teleport action is being performed
   * Addressed a reported concern that the Grenade Launcher did not deal extra damage when equipped with the Stainless Steel Bear passive ability while using Moze’s Auto-Bear
 
