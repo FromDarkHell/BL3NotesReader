@@ -123,7 +123,7 @@ adjustments in the future._
   * Retroactively awarded Trophies / Achievements to players that met the requirements
   * Addressed a reported concern where the Traitorweed projectile would only appear on the host player
   * Addressed a reported concern where the Vladof “Core Buster” grenade mod could damage allies with child grenades spawned after the first explosion
-  * Addressed a reported concern where standing on the inactive jump pad as Scourge teleports the user will launch them out of the map and kill them on the second teleport in [Takedown at the Guardian Breach](https://borderlands.com/en-US/news/2020-06-04-takedown-at-the-guardian-breach/)
+  * Addressed a reported concern where standing on the inactive jump pad as Scourge teleports the user will launch them out of the map and kill them on the second teleport in [Takedown at the Guardian Breach](https://borderlands.com/en-US/news/2020-06-11-takedown-at-the-guardian-breach/)
   * Addressed a reported concern where Anathema the Relentless was not using the correct death damage data in Takedown at the Guardian Breach
   * Addressed a reported concern where weapon trinkets would disappear from the collection after relaunching the game in the Bounty of Blood campaign add-on
   * Addressed a reported concern where the Jetbeast mortar weapon was dealing damage twice
