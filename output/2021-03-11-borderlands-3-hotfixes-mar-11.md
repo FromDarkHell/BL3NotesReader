@@ -21,10 +21,10 @@ please submit a ticket to [support.2k.com](https://support.2k.com/).
   * Added the Firestorm Grenade Mod to Aurelia’s boss pool
 
 The Siren’s Remnant skill was doing more damage than we ever intended for it.
-The skill is only supposed to affect gun and skill damage, but we (and the
-community—looking at you “Game Breaker Amara” build) found it was also adding
-unlisted bonuses to melee, slide, and slam damage. We have addressed this
-exploit and made changes to some of the gear that benefitted from this bug.
+The skill is only supposed to affect gun and skill damage, but we found it was
+also adding unlisted bonuses to melee, slide, and slam damage. We have
+addressed this exploit and made changes to some of the gear that benefitted
+from this bug.
 
   * Removed unlisted melee, slide, and slam damage from the Siren’s Remnant skill
   * Adjusted the melee damage done by the Fish Slap grenade mod
