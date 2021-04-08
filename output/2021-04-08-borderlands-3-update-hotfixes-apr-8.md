@@ -77,6 +77,7 @@ along the way somewhere and this change corrects that!_
   * Updated timed events to grant current event rewards if the player played the previous year
   * Updated Captain Haunt to prevent him from staying invincible if his phylacteries (what a word) were destroyed too quickly. Players will not see this change until the Bloody Harvest returns!
   * Added hotfixes to the game permanently
+  * Added Quick Change Stations to Takedown at the Maliwan Blacksite and Takedown at the Guardian Breach
 
 # Vault Hunter Changes
 
