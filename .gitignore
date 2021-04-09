@@ -126,3 +126,5 @@ dmypy.json
 *.sublime-workspace
 *.sublime-project
 build.bat
+
+mampinstaller/
