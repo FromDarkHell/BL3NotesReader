@@ -15,7 +15,10 @@ you are experiencing any issues or want to provide feedback, please submit a
 ticket to support.2k.com.
 
   * Activating the second of Maurice’s Community Carnage Challenges: LONG-DISTANCE RELATIONS
-  * Sniper Rifles
-    * Increased Weapon Damage
-    * Dev Note: We are applying a flat damage buff to sniper rifles to make them a little more lethal throughout entirety of the game. After these changes have settled, we will look at additional adjustments to unique sniper rifles as necessary.
+  * Sniper Rifles  
+\- Increased Weapon Damage  
+\- Dev Note: We are applying a flat damage buff to sniper rifles to make them
+a little more lethal throughout entirety of the game. After these changes have
+settled, we will look at additional adjustments to unique sniper rifles as
+necessary.
 
